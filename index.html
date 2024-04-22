@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Events</title>
+</head>
+
+<body>
+    <h1>DOM Events</h1>
+    <button onclick="console.log(10)">Click Me</button>
+    <button onclick="console.log(100)">Another Button</button>
+    <button onclick="console.log('Clicked')">Button</button>
+    <br>
+    <button onclick="document.body.style.backgroundColor='green'">Make Green</button>
+    <button onclick="makeLightGreen()">Make lightGreen</button>
+    <button id="make-lightblue">Make lightBlue</button>
+
+
+
+    <script src="events.js"></script>
+    <script>
+        function makeLightGreen() {
+            document.body.style.backgroundColor = 'lightGreen';
+        }
+    </script>
+</body>
+
+</html>
